@@ -187,7 +187,7 @@ bar {
 
 	# -c ~/.config/i3status/config
 	position top
-    colors {
+colors {
         background #1A1A1A
         statusline #E6E6E6
         separator  #444444
@@ -199,21 +199,25 @@ bar {
     }
 }
 
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
+exec --no-startup-id feh --bg-scale /home/tinu/Pictures/Wallpaper/makima.jpg
 exec --no-startup-id compton
 
 
-# Make the currently focused window a scratchpad
+# Make the currently focused window a scratchpadw
 bindsym $mod+Shift+minus move scratchpad
 
-# Show the first scratchpad window
+# Show the first scratchpad window	position top
+
 bindsym $mod+minus scratchpad show 
 
 #for screenshots install maim and xclip 
 bindsym Print exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/Pictures/screenshots/screenshot_$NOW.png && xclip -selection clip -t image/png ~/Pictures/screenshots/screenshot_$NOW.png 
 
 # keybinding to lock screen
-bindsym $mod+Control+l exec "i3lock -i /home/panda/Pictures/wallpaper/name.png"
+bindsym $mod+Control+l exec "i3lock -i /home/tinu/Pictures/Wallpaper/guts_scale.png"
+
+
 
 # install lxappearence -> materia dark 
 
@@ -223,3 +227,6 @@ gaps outer 4px
 
 for_window [class=".*"] border none
 #hide_edge_borders smart
+bindsym $mod+g exec --no-startup-id rofi -show drun
+bindsym $mod+Shift+p exec --no-startup-id ~/.config/rofi/powermenu.sh
+
