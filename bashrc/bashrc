@@ -125,25 +125,6 @@ export PATH=$HOME/.local/bin:$PATH
 alias please=sudo
 alias goci='cd /home/panda/git/private_0x1/my_notes/image_processing/cpp'
 alias download='python3 yt_down.py'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+alias rbrit='sudo brightnessctl set 20%-'
+alias incbrit='sudo brightnessctl set +20%'
+alias get_gazebo='export GZ_SIM_RESOURCE_PATH="$HOME/pico_ws/src/rotors_simulator/rotors_swift_description/models"'
