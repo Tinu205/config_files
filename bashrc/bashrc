@@ -128,3 +128,4 @@ alias download='python3 yt_down.py'
 alias rbrit='sudo brightnessctl set 20%-'
 alias incbrit='sudo brightnessctl set +20%'
 alias get_gazebo='export GZ_SIM_RESOURCE_PATH="$HOME/pico_ws/src/rotors_simulator/rotors_swift_description/models"'
+. "$HOME/.cargo/env"
